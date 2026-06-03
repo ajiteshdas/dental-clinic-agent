@@ -189,15 +189,16 @@
       align-items: center;
       justify-content: center;
       gap: 0;
-      max-width: 700px;
+      max-width: 860px;
       margin: 0 auto;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     .roi-item {
       text-align: center;
-      padding: 0 2.5rem;
+      padding: 0 2rem;
       border-right: 1px solid rgba(255,255,255,0.25);
+      flex: 1;
     }
     .roi-item:last-child { border-right: none; }
 
@@ -456,9 +457,9 @@
       .hero-actions { flex-direction: column; align-items: flex-start; }
       .price-card { padding: 28px 22px; }
       .contact-card { padding: 28px 22px; }
-      .roi-item { padding: 0.5rem 1.5rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); }
+      .roi-item { padding: 0.75rem 1rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); flex:none; width:100%;}
       .roi-item:last-child { border-bottom: none; }
-      .roi-grid { flex-direction: column; }
+      .roi-grid { flex-direction: column; flex-wrap: wrap;}
     }
   </style>
 </head>
